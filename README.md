@@ -1,6 +1,6 @@
-# grand-frais-client
+# GrandFrais's client
 
-This template should help get you started developing with Vue 3 in Vite.
+Client of a game inspired by Fakin' It. Temporary name.
 
 ## Recommended IDE Setup
 
