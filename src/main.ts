@@ -1,12 +1,16 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
-import App from "./App.vue";
 import router from "./router";
 
 import "./assets/main.css";
+import socketioService from "./services/socketio.service";
+import AppVue from "./App.vue";
 
-const app = createApp(App);
+AppVue.created = () => {
+  socketioService.setupSocketConnection();
+};
+const app = createApp(AppVue);
 
 app.use(createPinia());
 app.use(router);
